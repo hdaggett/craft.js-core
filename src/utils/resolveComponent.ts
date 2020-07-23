@@ -6,6 +6,7 @@ export const resolveComponent = (
   comp: React.ElementType | string
 ) => {
   let Comp: string;
+  if (!comp) return;
   const name = (comp as any).name || (comp as any).displayName;
 
   if (comp === Canvas) return 'Canvas';

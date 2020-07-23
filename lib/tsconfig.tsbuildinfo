@@ -278,7 +278,7 @@
         "signature": "32c91ddda7a82154fb29b188b3b5e16ca98d0f1e946d082f1af53f0301ffe618"
       },
       "../src/utils/resolvecomponent.ts": {
-        "version": "df8898fe3570b568ff6e6c682a04962540f423980aa92f1c8d53ba638efd7663",
+        "version": "c1ab524b1e1d66946c98f10b985656cf179e3bd30873882815041d4db7892817",
         "signature": "34a3a1f82f7104db7f5bc77a3ab5532317e1131f9d48eb01efb534d0184e70d5"
       },
       "../src/utils/deserializenode.tsx": {
