@@ -402,8 +402,8 @@
         "signature": "c3fd3bcf70aadeaed4a7616106f1efa335425908e4fa994c92ae1ab842535efa"
       },
       "../src/utils/serializenode.tsx": {
-        "version": "90e60786e8db3c0c920c4b64df422ef5c238b9de7efa1800ae86a7248719f065",
-        "signature": "b86366e0c8851b6b3f0fc8f230b00d8eadf5f74de6e0d664f2dfa27d997303ef"
+        "version": "04caf0885f7ec4a80ce50c8c238dd7037b6469e6b55314af3afee81836c413af",
+        "signature": "76319e93dd1f42a5bd8f873b587653ba19f3cbece2642879420c3c5bbe4e9bb2"
       },
       "../src/editor/nodehelpers.ts": {
         "version": "bb8dbec56c4f1df45f849910ceb2c08c81c4cdd8e488f79f1fd63206ca15bd40",
