@@ -34,6 +34,7 @@ export const Actions = (
     parentId: NodeId,
     index?: number
   ) => {
+    console.log(node);
     const parent = getParentAndValidate(parentId);
     // reset the parent node ids
     if (!parent.data.nodes) {
@@ -59,6 +60,7 @@ export const Actions = (
     parentId?: NodeId,
     index?: number
   ) => {
+    console.log(tree);
     const node = tree.nodes[tree.rootNodeId];
 
     if (parentId != null) {
@@ -177,7 +179,7 @@ export const Actions = (
      * @param index
      */
     addNodeTree(tree: NodeTree, parentId?: NodeId, index?: number) {
-      console.log("Heather's add node tree");
+      console.log(tree.nodes, tree.rootNodeId);
       const node = tree.nodes[tree.rootNodeId];
 
       if (!parentId) {
