@@ -34,7 +34,7 @@ export const Actions = (
     parentId: NodeId,
     index?: number
   ) => {
-    console.log(node);
+    console.log('addNodeToParentAtIndex', node);
     const parent = getParentAndValidate(parentId);
     // reset the parent node ids
     if (!parent.data.nodes) {
@@ -60,7 +60,7 @@ export const Actions = (
     parentId?: NodeId,
     index?: number
   ) => {
-    console.log(tree);
+    console.log('addTreeToParentAtIndex', tree);
     const node = tree.nodes[tree.rootNodeId];
 
     if (parentId != null) {
@@ -179,7 +179,7 @@ export const Actions = (
      * @param index
      */
     addNodeTree(tree: NodeTree, parentId?: NodeId, index?: number) {
-      console.log(tree.nodes, tree.rootNodeId);
+      console.log('Add node tree', tree.nodes, tree.rootNodeId);
       const node = tree.nodes[tree.rootNodeId];
 
       if (!parentId) {
