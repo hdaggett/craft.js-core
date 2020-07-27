@@ -218,7 +218,7 @@
         "signature": "ccbbde0459279d5d0fd46023b9e6f815325566faac4061fd859b346e9737b778"
       },
       "../src/editor/actions.ts": {
-        "version": "a83ce0cef0e65a2e19bb93a5f1daafbcf883e4a3454d5950178b15c1470bc42f",
+        "version": "cbc1f437f5b1af614acf24a60be42c9537535fc99370a5d73f3074e9704fbd8f",
         "signature": "852ce769b965dab301e6202ff6a89fdff4030483fbe71af1c818c1f0f665913b"
       },
       "../src/editor/store.tsx": {

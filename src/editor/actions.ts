@@ -91,10 +91,8 @@ export const Actions = (
   const getParentAndValidate = (parentId: NodeId): Node => {
     console.log('getParent', parentId);
     invariant(parentId, ERROR_NOPARENT);
-    console.log('getParent nodes');
-    console.log(JSON.parse(JSON.stringify(state.nodes)));
-    console.log(JSON.parse(JSON.stringify(state.nodes[parentId])));
     const parent = state.nodes[parentId];
+    console.log(parent);
     invariant(parent, ERROR_INVALID_NODEID);
     return parent;
   };
