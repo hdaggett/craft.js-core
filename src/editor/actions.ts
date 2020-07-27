@@ -34,7 +34,7 @@ export const Actions = (
     parentId: NodeId,
     index?: number
   ) => {
-    console.log('addNodeToParentAtIndex', node);
+    console.log('addNodeToParentAtIndex', node, parentId);
     const parent = getParentAndValidate(parentId);
     // reset the parent node ids
     if (!parent.data.nodes) {
