@@ -196,10 +196,7 @@ export const Actions = (
      * @param id
      */
     delete(id: NodeId) {
-      if (!query.node(id)) {
-        console.log(`Cannot delete node with id ${id}`);
-      }
-
+      if (!state.nodes[id]) return;
       invariant(!query.node(id).isTopLevelNode(), ERROR_DELETE_TOP_LEVEL_NODE);
 
       deleteNode(id);
