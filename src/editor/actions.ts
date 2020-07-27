@@ -97,10 +97,6 @@ export const Actions = (
     const targetNode = state.nodes[id],
       parentNode = state.nodes[targetNode.data.parent];
 
-    if (!targetNode) {
-      console.log(`Cannot delete node with id ${id}`);
-    }
-
     if (targetNode.data.nodes) {
       // we deep clone here because otherwise immer will mutate the node
       // object as we remove nodes
@@ -200,6 +196,10 @@ export const Actions = (
      * @param id
      */
     delete(id: NodeId) {
+      if (!query.node(id)) {
+        console.log(`Cannot delete node with id ${id}`);
+      }
+
       invariant(!query.node(id).isTopLevelNode(), ERROR_DELETE_TOP_LEVEL_NODE);
 
       deleteNode(id);
