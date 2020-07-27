@@ -218,7 +218,7 @@
         "signature": "ccbbde0459279d5d0fd46023b9e6f815325566faac4061fd859b346e9737b778"
       },
       "../src/editor/actions.ts": {
-        "version": "cbc1f437f5b1af614acf24a60be42c9537535fc99370a5d73f3074e9704fbd8f",
+        "version": "26ac42112c301f9c206fe67ebe9578758325ed6452b91ef1eb2580b546f22f32",
         "signature": "852ce769b965dab301e6202ff6a89fdff4030483fbe71af1c818c1f0f665913b"
       },
       "../src/editor/store.tsx": {
@@ -278,7 +278,7 @@
         "signature": "32c91ddda7a82154fb29b188b3b5e16ca98d0f1e946d082f1af53f0301ffe618"
       },
       "../src/utils/resolvecomponent.ts": {
-        "version": "c1ab524b1e1d66946c98f10b985656cf179e3bd30873882815041d4db7892817",
+        "version": "df8898fe3570b568ff6e6c682a04962540f423980aa92f1c8d53ba638efd7663",
         "signature": "34a3a1f82f7104db7f5bc77a3ab5532317e1131f9d48eb01efb534d0184e70d5"
       },
       "../src/utils/deserializenode.tsx": {
@@ -402,8 +402,8 @@
         "signature": "c3fd3bcf70aadeaed4a7616106f1efa335425908e4fa994c92ae1ab842535efa"
       },
       "../src/utils/serializenode.tsx": {
-        "version": "04caf0885f7ec4a80ce50c8c238dd7037b6469e6b55314af3afee81836c413af",
-        "signature": "76319e93dd1f42a5bd8f873b587653ba19f3cbece2642879420c3c5bbe4e9bb2"
+        "version": "90e60786e8db3c0c920c4b64df422ef5c238b9de7efa1800ae86a7248719f065",
+        "signature": "b86366e0c8851b6b3f0fc8f230b00d8eadf5f74de6e0d664f2dfa27d997303ef"
       },
       "../src/editor/nodehelpers.ts": {
         "version": "bb8dbec56c4f1df45f849910ceb2c08c81c4cdd8e488f79f1fd63206ca15bd40",

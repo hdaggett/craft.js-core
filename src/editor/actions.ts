@@ -34,7 +34,6 @@ export const Actions = (
     parentId: NodeId,
     index?: number
   ) => {
-    console.log('addNodeToParentAtIndex', node, parentId);
     const parent = getParentAndValidate(parentId);
     // reset the parent node ids
     if (!parent.data.nodes) {
@@ -60,7 +59,6 @@ export const Actions = (
     parentId?: NodeId,
     index?: number
   ) => {
-    console.log('addTreeToParentAtIndex', tree);
     const node = tree.nodes[tree.rootNodeId];
 
     if (parentId != null) {
@@ -89,10 +87,8 @@ export const Actions = (
   };
 
   const getParentAndValidate = (parentId: NodeId): Node => {
-    console.log('getParent', parentId);
     invariant(parentId, ERROR_NOPARENT);
     const parent = state.nodes[parentId];
-    console.log(parent);
     invariant(parent, ERROR_INVALID_NODEID);
     return parent;
   };
@@ -100,6 +96,10 @@ export const Actions = (
   const deleteNode = (id: NodeId, isLinkedNode: boolean = false) => {
     const targetNode = state.nodes[id],
       parentNode = state.nodes[targetNode.data.parent];
+
+    if (!targetNode) {
+      console.log(`Cannot delete node with id ${id}`);
+    }
 
     if (targetNode.data.nodes) {
       // we deep clone here because otherwise immer will mutate the node
@@ -181,7 +181,7 @@ export const Actions = (
      * @param index
      */
     addNodeTree(tree: NodeTree, parentId?: NodeId, index?: number) {
-      console.log('Add node tree', tree.nodes, tree.rootNodeId);
+      console.log("Heather's add node tree");
       const node = tree.nodes[tree.rootNodeId];
 
       if (!parentId) {
